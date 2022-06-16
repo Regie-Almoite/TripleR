@@ -40,10 +40,6 @@
     opacity: 0.99;
 }
 
-#hero h1 {
-    letter-spacing: 1rem;
-}
-
 .tour-desc {
     border-radius: 10px;
     padding: 40px;
