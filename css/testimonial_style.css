@@ -18,6 +18,13 @@
     border-radius: 12px;
 }
 
+.welcome {
+    font-family: league spartan;
+    font-size: 70px !important;
+    font-weight: bolder;
+    line-height: 1em;
+}
+
 #hero {
     background-image: url("../images/ralImg/burger1.jpg");
     background-repeat: no-repeat;
