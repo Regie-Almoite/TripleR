@@ -17,7 +17,8 @@
     color: black;
 }
 
-.burgerMenu {
+#burgerMenu {
+    border: none;
     font-size: 3rem;
 }
 
