@@ -1,0 +1,63 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+.navbar-toggler {
+    border: none;
+    color: black;
+}
+
+.burgerMenu {
+    font-size: 3rem;
+}
+
+#border-nav {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+}
+
+#hero {
+    background-image: url("../images/ralImg/burger1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #0009;
+    background-blend-mode: overlay;
+    height: 20rem;
+}
+
+#hero:hover {
+    opacity: 0.99;
+}
+
+#hero h1 {
+    letter-spacing: 1rem;
+}
+
+.tour-desc {
+    border-radius: 10px;
+    padding: 40px;
+}
+
+#Testimonials {
+    background-color: #ecf87f;
+}
+
+@media only screen and (min-width: 768px) {
+    #hero h1 {
+        letter-spacing: 3rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #hero h1 {
+        letter-spacing: 3rem;
+    }
+}
+
+.fa-star {
+    color: orange;
+}
