@@ -90,6 +90,7 @@
 }
 
 .menuSection {
+    background-image: var(--card-bg);
     box-shadow: 0 25px 30px rgba(0, 0, 0, 0.3);
 }
 
