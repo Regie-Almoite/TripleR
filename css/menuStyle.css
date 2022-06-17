@@ -7,14 +7,19 @@
     --card-bg: linear-gradient(to right top, #000000, #2c2c2a);
     --orange: #fd6e06;
     --card-blk: #212223;
-    --warning-color: #ffc107;
     --red: #ff0000;
     --white: #ffffff;
+    --black: #000000;
 }
 
+/* navbar */
+
+.navbar {
+    background-color: #f5f220;
+}
 .navbar-toggler {
     border: none;
-    color: black;
+    color: var(--black);
 }
 
 #burgerMenu {
@@ -40,8 +45,8 @@
     background-position: center;
     background-color: rgba(0, 0, 0, 0.3);
     background-blend-mode: overlay;
-    border-top: 2rem solid black;
-    border-bottom: 2rem solid black;
+    border-top: 2rem solid var(--black);
+    border-bottom: 2rem solid var(--black);
 }
 
 .textSpecial {
@@ -56,31 +61,23 @@
     font-size: 8rem;
 }
 
+/* menu */
 .burgers {
-    position: relative;
     background-image: url(../images/backgrounds/burgerBg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-blend-mode: overlay;
 }
 
 .pizzas {
-    position: relative;
     background-image: url(../images/backgrounds/pizzaBg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    background-blend-mode: overlay;
 }
 
 .pastas {
-    position: relative;
     background-image: url(../images/backgrounds/pastaBg.jpg);
+}
+
+.burgers,
+.pastas,
+.pizzas {
+    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -109,7 +106,7 @@
 }
 
 .menuSection .card:hover {
-    box-shadow: 0 0 30px 5px #000000;
+    box-shadow: 0 0 30px 5px var(--black);
     transform: scale(1.1);
 }
 
@@ -123,15 +120,14 @@
 }
 
 .count i {
-    background-color: #000000;
+    background-color: var(--black);
 }
 
 .count i:hover {
     cursor: pointer;
 }
 
-.menuSection h2 i,
-.menuSection h2 img {
+.menuSection h2 i {
     animation: h2IconAnimation 1s infinite alternate forwards;
 }
 
@@ -144,7 +140,7 @@
 .categoryLinks {
     transform: translate(50%);
     z-index: 4;
-    transition: transform ease 0.5s;
+    transition: all ease 0.5s;
 }
 
 .categoryLinks:hover {
@@ -181,6 +177,7 @@
         transform: translateX(0);
     }
 }
+
 /* media screen large devices */
 @media only screen and (min-width: 992px) {
     .menuHeroSection {
@@ -225,21 +222,21 @@
 /* angle icon animation */
 @keyframes showCatLinksAnimation {
     0% {
-        color: #ffffff;
+        color: var(--white);
         transform: translateX(-6px);
     }
     30% {
         transform: translateX(-4px);
     }
     60% {
-        color: #fd6e06;
+        color: var(--orange);
         transform: translateX(-10px);
     }
     70% {
         transform: translateX(-5px);
     }
     100% {
-        color: #ffffff;
+        color: var(--white);
         transform: translateX(-8px);
     }
 }
