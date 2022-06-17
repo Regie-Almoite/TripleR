@@ -37,11 +37,6 @@
     line-height: 1em;
 }
 
-@media only screen and (min-width: 768px) {
-    .welcome {
-        font-size: 70px !important;
-    }
-}
 #hero:hover {
     opacity: 0.99;
 }
@@ -52,9 +47,20 @@
 }
 
 #Testimonials {
-    background-color: #ecf87f;
+    background-image: url(../images/ralImg/testimonial.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(235, 233, 233, 0.39);
+    background-blend-mode: overlay;
 }
 
 .fa-star {
     color: orange;
+}
+
+@media only screen and (min-width: 768px) {
+    .welcome {
+        font-size: 70px !important;
+    }
 }
