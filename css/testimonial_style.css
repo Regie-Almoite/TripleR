@@ -19,13 +19,6 @@
     border-radius: 12px;
 }
 
-.welcome {
-    font-family: league spartan;
-    font-size: 70px !important;
-    font-weight: bolder;
-    line-height: 1em;
-}
-
 #hero {
     background-image: url("../images/ralImg/burger1.jpg");
     background-repeat: no-repeat;
@@ -37,6 +30,18 @@
     height: 20rem;
 }
 
+.welcome {
+    font-family: league spartan;
+    font-size: 30px !important;
+    font-weight: bolder;
+    line-height: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+    .welcome {
+        font-size: 70px !important;
+    }
+}
 #hero:hover {
     opacity: 0.99;
 }
