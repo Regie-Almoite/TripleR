@@ -13,6 +13,8 @@
             integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
             crossorigin="anonymous"
         />
+        
+        <!-- javaScript bundle with popper -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
@@ -36,21 +38,22 @@
         />
     </head>
     <body>
-        <!-- Conteiner Start -->
+        <!-- app container start -->
         <div class="container-fluid p-0">
             <!-- header start -->
             <header>
-                <!-- Navigation start -->
+                <!-- navigation start -->
                 <nav
+                    id="top"
                     class="navbar nav nav-pills navbar-expand-lg w-100"
-                    style="background-color: #f5f220"
                 >
                     <div class="d-flex container-fluid">
                         <div class="d-flex flex-fill">
                             <a>
                                 <img
                                     src="./images/TRIPLE-R_LOGO-removebg-preview.png"
-                                    width="100"
+                                    alt="Triple R logo"
+                                    width="150"
                             /></a>
                         </div>
                         <div class="d-flex">
@@ -68,7 +71,7 @@
                             <ul class="navbar-nav ms-2 align-items-center px-2">
                                 <li class="nav-item m-2" id="border">
                                     <a
-                                        class="nav-link px-2 fw-bold fs-5"
+                                        class="nav-link px-2 fw-bold fs-4"
                                         href="./index.html"
                                         style="color: black"
                                         >Home</a
@@ -118,25 +121,26 @@
                         </div>
                     </div>
                 </nav>
-                <!-- Navigation End -->
+                <!-- navigation End -->
             </header>
             <!-- header end -->
 
-
+            <!-- menu hero start -->
             <div class="menuHeroSection d-flex align-items-center justify-content-center">
                 <p class="textSpecial p-0 m-0 text-center">Our <span>Menu</span></p>
             </div>
+            <!-- menu hero end -->
 
-            <!-- Menu Start -->
+            <!-- menu Start -->
             <div class="menuSection d-flex flex-column align-items-center">
-                <div id="burgers" class="burgers min-vh-100 d-flex flex-column">
+                <div id="burgers" class="burgers min-vh-100 d-flex flex-column alig-items-center justify-content-center">
                     <h2 class="text-center text-md-start p-3 p-md-5">
                         BURGER <i class="fa-solid fa-burger"></i></i>
                     </h2>
                     <div
                         class="p-2 p-md-3 d-flex flex-wrap flex-column flex-md-row justify-content-evenly"
                     >
-                        <div class="card rounded-5 m-3 d-flex flex-column col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8 col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1 justify-content-between">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -174,7 +178,7 @@
                                 <a href="./product.html" class="mt-auto btn btn-warning align-self-end w-100">Buy now</a>
                             </div>
                         </div>
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8 col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1 justify-content-between">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -212,7 +216,7 @@
                                 <button class="mt-auto btn btn-warning align-self-end w-100">Buy now</button>
                             </div>
                         </div>
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8 col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1 justify-content-between">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -250,7 +254,7 @@
                                 <button class="mt-auto btn btn-warning align-self-end w-100">Buy now</button>
                             </div>
                         </div>
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8 col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1 justify-content-between">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -288,7 +292,7 @@
                                 <button class="mt-auto btn btn-warning align-self-end w-100">Buy now</button>
                             </div>
                         </div>
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8 col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1 justify-content-between">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -326,7 +330,7 @@
                                 <button class="mt-auto btn btn-warning align-self-end w-100">Buy now</button>
                             </div>
                         </div>
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8 col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1 justify-content-between">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -373,7 +377,7 @@
                     <div
                         class="p-2 p-md-3 d-flex flex-wrap flex-column flex-md-row justify-content-evenly mb-3"
                     >
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8  col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -411,7 +415,7 @@
                                 <button class="mt-auto btn btn-warning align-self-end w-100">Buy now</button>
                             </div>
                         </div>
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8  col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -449,7 +453,7 @@
                                 <button class="mt-auto btn btn-warning align-self-end w-100">Buy now</button>
                             </div>
                         </div>
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8  col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -487,7 +491,7 @@
                                 <button class="mt-auto btn btn-warning align-self-end w-100">Buy now</button>
                             </div>
                         </div>
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8  col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -525,7 +529,7 @@
                                 <button class="mt-auto btn btn-warning align-self-end w-100">Buy now</button>
                             </div>
                         </div>
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8  col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -563,7 +567,7 @@
                                 <button class="mt-auto btn btn-warning align-self-end w-100">Buy now</button>
                             </div>
                         </div>
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8  col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -601,7 +605,7 @@
                                 <button class="mt-auto btn btn-warning align-self-end w-100">Buy now</button>
                             </div>
                         </div>
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8  col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -639,7 +643,7 @@
                                 <button class="mt-auto btn btn-warning align-self-end w-100">Buy now</button>
                             </div>
                         </div>
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8  col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -677,7 +681,7 @@
                                 <button class="mt-auto btn btn-warning align-self-end w-100">Buy now</button>
                             </div>
                         </div>
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8  col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -715,7 +719,7 @@
                                 <button class="mt-auto btn btn-warning align-self-end w-100">Buy now</button>
                             </div>
                         </div>
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8  col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -762,7 +766,7 @@
                     <div
                         class="p-2 p-md-3 d-flex flex-wrap flex-column flex-md-row justify-content-evenly mb-3"
                     >
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8  col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -800,7 +804,7 @@
                                 <button class="mt-auto btn btn-warning align-self-end w-100">Buy now</button>
                             </div>
                         </div>
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8  col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -838,7 +842,7 @@
                                 <button class="mt-auto btn btn-warning align-self-end w-100">Buy now</button>
                             </div>
                         </div>
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8  col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -876,7 +880,7 @@
                                 <button class="mt-auto btn btn-warning align-self-end w-100">Buy now</button>
                             </div>
                         </div>
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8  col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -914,7 +918,7 @@
                                 <button class="mt-auto btn btn-warning align-self-end w-100">Buy now</button>
                             </div>
                         </div>
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8  col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -952,7 +956,7 @@
                                 <button class="mt-auto btn btn-warning align-self-end w-100">Buy now</button>
                             </div>
                         </div>
-                        <div class="card rounded-5 m-3 d-flex flex-column  col col-md-3 col-lg-2 overflow-hidden">
+                        <div class="card rounded-5 my-3 mx-auto mx-md-3 d-flex flex-column col-8  col-md-3 col-lg-2 overflow-hidden">
                             <div class="d-flex p-3 flex-grow-1">
                                 <div
                                     class="item d-flex flex-column align-items-center justify-content-between"
@@ -993,22 +997,23 @@
                     </div>
                 </div>
             </div>
-            <!-- Menu End -->
+            <!-- menu End -->
 
-            <!-- Category Links  Start-->
+            <!-- category links  start-->
             <div class="categoryLinks d-flex justify-content-between align-items-center position-fixed bottom-50 end-0 p-2">
                 <div class="showCategoryLinks me-3 d-md-none">
                     <i class="fa-solid fa-angle-left fs-3"></i>
                 </div>
-                <div class="catLinks d-flex flex-column bg-warning p-2 rounded-5">
-                    <a href="#burgers" title="Burgers" class="my-3"><i class="fa-solid fa-burger fs-3"></i></a>
-                    <a href="#pizzas" title="Pizzas" class="my-3"><i class="fa-solid fa-pizza-slice fs-3"></i></a>
-                    <a href="#pastas" title="Pastas" class="my-3"><i class="fa-solid fa-utensils fs-3"></i></a>
+                <div class="catLinks d-flex flex-column justify-content-center align-items-center bg-warning p-2 rounded-5">
+                    <a href="#top" title="Go to Top" class="my-2"><i class="fa-solid fa-angle-up fs-3"></i></a>
+                    <a href="#burgers" title="Burgers" class="my-2"><i class="fa-solid fa-burger fs-3"></i></a>
+                    <a href="#pizzas" title="Pizzas" class="my-2"><i class="fa-solid fa-pizza-slice fs-3"></i></a>
+                    <a href="#pastas" title="Pastas" class="my-2"><i class="fa-solid fa-utensils fs-3"></i></a>
                 </div>
             </div>
-             <!-- Category Links  End-->
+             <!-- category links  end-->
              
-            <!-- Contact Start-->
+            <!-- contact Start-->
             <section>
                 <div class="container">
                     <div class="mt-5 p-3 p-md-5">
@@ -1096,8 +1101,8 @@
                     </div>
                 </div>
             </section>
-            <!-- Contact End -->
-            <!-- Footer Start -->
+            <!-- contact End -->
+            <!-- footer Start -->
             <footer class=" bg-dark">
                 <div class="container">
                     <div class="pt-5 p-3 p-md-5 px-2 justify-content-center">
@@ -1168,8 +1173,8 @@
                     </section>
                 </div>
             </footer>
-            <!-- Footer end -->
+            <!-- footer end -->
         </div>
-        <!-- Container End -->
+        <!-- app container End -->
     </body>
 </html>
