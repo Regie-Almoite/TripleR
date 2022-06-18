@@ -156,16 +156,34 @@
                                     repellat beatae quibusdam commodi similique
                                     consequatur ratione dicta eos.
                                 </p>
-                                <div class="d-flex">
-                                    <label for="count" class="form-label me-3"
+                                <div
+                                    class="d-flex align-items-center justify-content-evenly"
+                                >
+                                    <label
+                                        for="count"
+                                        class="form-label me-3 fw-bold"
                                         >Quantity:</label
                                     >
                                     <input
                                         type="number"
                                         name="count"
                                         id="count"
-                                        class="form-control w-25"
+                                        class="form-control me-3"
                                         value="2"
+                                        min="1"
+                                    />
+                                    <label
+                                        for="total"
+                                        class="form-label me-3 fw-bold"
+                                        >Total Price:</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        name="totalPrice"
+                                        id="total"
+                                        disabled
+                                        value="₱2"
                                     />
                                 </div>
                                 <div class="pt-3">
@@ -175,6 +193,7 @@
                                         id="name"
                                         class="form-control"
                                         placeholder="Enter your Full name"
+                                        required
                                     />
                                     <input
                                         type="text"
@@ -182,6 +201,7 @@
                                         id="phone"
                                         class="form-control mt-2"
                                         placeholder="Enter your phone number"
+                                        required
                                     />
                                     <input
                                         type="email"
@@ -189,6 +209,7 @@
                                         id="email"
                                         placeholder="Enter your email address"
                                         class="form-control mt-2"
+                                        required
                                     />
                                     <textarea
                                         name="address"
@@ -197,6 +218,7 @@
                                         rows="5"
                                         placeholder="Address"
                                         class="form-control mt-2"
+                                        required
                                     ></textarea>
                                     <div class="pt-2">
                                         <h5>Payment type:</h5>
@@ -205,6 +227,7 @@
                                             name="payment"
                                             id="payment"
                                             class="form-input"
+                                            required
                                         />
                                         <label for="payment" class="form-label"
                                             >Card</label
@@ -214,6 +237,7 @@
                                             name="payment"
                                             id="payment"
                                             class="form-input ms-3"
+                                            required
                                         />
                                         <label for="cod" class="form-label"
                                             >Cash on delivery</label
