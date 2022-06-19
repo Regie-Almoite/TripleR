@@ -165,3 +165,58 @@
     background-blend-mode: overlay;
     background-attachment: fixed;
 }
+
+/* Back To Top */
+.backToTop {
+    transform: translate(50%);
+    z-index: 4;
+    transition: all ease 0.5s;
+}
+
+.backToTop:hover {
+    transform: translateX(0);
+}
+
+.topIcon a {
+    transition: all ease 0.25s;
+}
+
+.topIcon a:hover {
+    transform: scale(1.5);
+}
+
+.topIcon i {
+    color: #fd6e06;
+}
+
+.showBackToTop i {
+    animation: showCatLinksAnimation infinite 2s alternate;
+}
+
+@media only screen and (min-width: 768px) {
+    .backToTop {
+        transform: translateX(0);
+    }
+}
+
+/* angle icon animation */
+@keyframes showCatLinksAnimation {
+    0% {
+        color: white;
+        transform: translateX(-6px);
+    }
+    30% {
+        transform: translateX(-4px);
+    }
+    60% {
+        color: #fd6e06;
+        transform: translateX(-10px);
+    }
+    70% {
+        transform: translateX(-5px);
+    }
+    100% {
+        color: white;
+        transform: translateX(-8px);
+    }
+}
