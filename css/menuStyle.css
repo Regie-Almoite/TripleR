@@ -45,8 +45,8 @@
     background-position: center;
     background-color: rgba(0, 0, 0, 0.3);
     background-blend-mode: overlay;
-    border-top: 2rem solid var(--black);
-    border-bottom: 2rem solid var(--black);
+    border-top: 1rem solid var(--black);
+    border-bottom: 1rem solid var(--black);
 }
 
 .textSpecial {
@@ -62,32 +62,31 @@
 }
 
 /* menu */
-.burgers {
+#burgers {
     background-image: url(../images/backgrounds/burgerBg.jpg);
 }
 
-.pizzas {
+#pizzas {
     background-image: url(../images/backgrounds/pizzaBg.jpg);
 }
 
-.pastas {
+#pastas {
     background-image: url(../images/backgrounds/pastaBg.jpg);
 }
 
-.burgers,
-.pastas,
-.pizzas {
+#burgers,
+#pastas,
+#pizzas {
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: overlay;
 }
 
 .menuSection {
-    background-image: var(--card-bg);
+    background-color: white;
     box-shadow: 0 25px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -96,6 +95,7 @@
     font-family: var(--banger);
     font-size: 4rem;
     z-index: 1;
+    height: 20vh;
 }
 
 .menuSection .card {
@@ -129,10 +129,6 @@
 
 .count i:hover {
     cursor: pointer;
-}
-
-.menuSection h2 i {
-    animation: h2IconAnimation 1s infinite alternate forwards;
 }
 
 .menuSection p {
@@ -202,16 +198,6 @@
         font-size: 7rem;
     }
 }
-
-/* Menu category icon animation */
-/* @keyframes h2IconAnimation {
-    from {
-        transform: rotate(-10deg);
-    }
-    to {
-        transform: rotate(10deg);
-    }
-} */
 
 /* Menu card image animation */
 @keyframes imgPop {
